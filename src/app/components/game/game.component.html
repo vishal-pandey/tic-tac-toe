@@ -1,0 +1,18 @@
+<mat-toolbar>Tic Tac Toe</mat-toolbar>
+<section class="container">
+	<section class="game">
+		<div class="box b-0" (click)="play(0)">{{game[0]}}</div>
+		<div class="box b-1" (click)="play(1)">{{game[1]}}</div>
+		<div class="box b-2" (click)="play(2)">{{game[2]}}</div>
+		<div class="box b-3" (click)="play(3)">{{game[3]}}</div>
+		<div class="box b-4" (click)="play(4)">{{game[4]}}</div>
+		<div class="box b-5" (click)="play(5)">{{game[5]}}</div>
+		<div class="box b-6" (click)="play(6)">{{game[6]}}</div>
+		<div class="box b-7" (click)="play(7)">{{game[7]}}</div>
+		<div class="box b-8" (click)="play(8)">{{game[8]}}</div>
+	</section>
+	<section class="message">
+		{{message}}
+	</section>
+	<button mat-stroked-button (click)="reset()">Reset</button>
+</section>
